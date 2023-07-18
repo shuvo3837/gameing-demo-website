@@ -27,7 +27,7 @@ body{
     font-size: 20px;
     font-weight: 800;
 }
-.logo > p > span{
+span{
     color: red;
 }
 
@@ -44,3 +44,59 @@ body{
 .list > p{
     background-color: rgb(203, 195, 195);
 }
+/* nav & logo style end */
+
+/* banner style */
+.banner{
+    background-color: rgb(239, 232, 239);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+.banner-text{
+    width: 300px;
+    font-size: 18px;
+}
+.btn{
+    background-color: pink;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    
+}
+.btn-primary{
+    background-color: rgb(128, 160, 215);
+}
+.banner-text > h1{
+    color: mediumpurple;
+    font-size: 35px;
+    padding: 5px 0px;
+}
+.banner-img{
+    width: 300px;
+}
+.banner-img img{
+    width: 100%;
+}
+
+/* online games style */
+.card-description{
+    width: 500px;
+    align-items: center;
+    margin: 30px auto;
+    text-align: center;  
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    width: 250px;
+}
+.card-img{
+    width: 100%;
+}
+
