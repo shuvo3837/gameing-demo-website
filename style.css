@@ -128,17 +128,24 @@ span{
 }
 /* logo img style */
 .logo-section{
-    
-    align-items: center;
+    margin: 30px;
+    width: 90%;
+    display: grid;
+    justify-self: center;
 }
 .logo-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    align-items: center;
+    justify-self: center;
+    
 }
 .single-logo{
     display: flex;
     align-items: center;
-    gap: 10px;
+    
+}
+.single-logo:hover{
+    border: 2px solid burlywood;
+    border-radius: 20px;
 }
