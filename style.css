@@ -48,18 +48,23 @@ span{
 
 /* banner style */
 .banner{
-    background-color: rgb(239, 232, 239);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 50px;
 }
 .banner-text{
-    width: 300px;
+    background-image: url("./images/Group\ 14.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
     font-size: 18px;
+    padding: 30px;
 }
 .btn{
-    background-color: pink;
+    background-color: rgb(176, 167, 169);
     border-radius: 20px;
     font-size: 14px;
     padding: 10px 20px;
