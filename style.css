@@ -126,7 +126,7 @@ span{
     margin: 60px 100px;
 }
 .play-img{
-    width: 400px;
+    width: 350px;
 }
 .image{
     width: 100%;
@@ -135,7 +135,7 @@ span{
     width: 100px;
     position: relative;
     margin-top: -50px;
-    margin-left: 350px;
+    margin-left: 300px;
 }
 .position img{
     width: 100%;
@@ -173,7 +173,6 @@ span{
 /* footer style */
 
 .footer{
-    height: 300px;
     background-color: rgb(48, 47, 47);
 }
 .footer-logo{
@@ -186,6 +185,7 @@ span{
 }
 .footer-nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     color: #fff;
@@ -193,18 +193,27 @@ span{
 .footer-nav li{
     list-style: none;
 }
+.icon-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 15px;
+}
+.icon-btn:hover{
+    background-color: blueviolet;
+}
 .icon{
     display: flex;
     justify-content: center;
-    gap: 30px;
-    font-size: 40px;
-    padding: 15px;
+    gap: 40px;
 }
 .footer-list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 30px;
-    padding: 10px;
     font-size: 14px;
     color: #fff;
 }
@@ -216,4 +225,47 @@ span{
     justify-content: center;
     color: azure;
     padding: 10px;
+}
+
+/* responsive for mobile device */
+@media screen and (max-width: 576px) {
+    .header-container, .nav > ul{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 30px;
+    }
+    .card-description{
+        width: auto;
+        align-items: center;
+    }
+    .card-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .play-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .play-text{
+        width: auto;
+        align-items: center;
+    }
+    .logo-container{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0px;
+    }
+    .grid-brek-item{
+        margin-left: 0px;
+    }
+    .footer-logo{
+        flex-wrap: wrap;
+    }
+    .footer-list{
+        flex-wrap: wrap;
+    }
 }
