@@ -285,6 +285,59 @@ span{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    } 
+}
+
+/* responsive for tab */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .header-container{
+        flex-direction: column;
     }
-  
+    .banner{
+        flex-direction: column;
+        padding: 10px;
+        gap: 30px;
+    }
+    .card-description{
+        width: auto;
+        align-items: center;
+    }
+    .card-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .play-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .play-text{
+        width: auto;
+        align-items: center;
+    }
+    .logo-container{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0px;
+        margin: 0px;
+
+    }
+    .single-logo{
+        padding: 0px;
+    }
+    .grid-brek-item{
+        margin-left: 0px;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
 }
