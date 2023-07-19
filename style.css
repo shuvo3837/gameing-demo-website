@@ -152,12 +152,12 @@ span{
 
 
 .logo-container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
     gap: 10px;
-    padding: 10px;
+    margin: 0 auto;
 }
 .single-logo{
     display: flex;
@@ -171,9 +171,7 @@ span{
     border-radius: 20px;
     color: rgb(16, 179, 184);
 }
-.grid-brek-item{
-    margin-left: 100px;
-}
+
 
 /* footer style */
 
@@ -269,6 +267,7 @@ span{
         align-items: center;
     }
     .logo-container{
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 0px;
         margin: 0px;
@@ -309,9 +308,11 @@ span{
         align-items: center;
     }
     .card-container{
-        flex-direction: column;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
         align-items: center;
+        padding: 10px;
     }
     .play-container{
         flex-direction: column-reverse;
@@ -323,6 +324,7 @@ span{
         align-items: center;
     }
     .logo-container{
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 0px;
         margin: 0px;
