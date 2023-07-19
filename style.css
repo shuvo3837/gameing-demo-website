@@ -100,6 +100,23 @@ span{
     width: 100%;
 }
 
+/* icon setup */
+.img-container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.play-icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: rgb(212, 13, 50);
+}
+
 /* play style */
 .play-container{
     display: flex;
@@ -127,25 +144,28 @@ span{
     width: 400px;
 }
 /* logo img style */
-.logo-section{
-    margin: 30px;
-    width: 90%;
-    display: grid;
-    justify-self: center;
-}
+
+
 .logo-container{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr); 
+    justify-items: center;
+    align-items: center;
     gap: 10px;
-    justify-self: center;
-    
+    padding: 10px;
 }
 .single-logo{
     display: flex;
+    justify-content: center;
     align-items: center;
-    
+    padding: 20px;
+    text-align: center;
 }
 .single-logo:hover{
     border: 2px solid burlywood;
     border-radius: 20px;
+    color: rgb(16, 179, 184);
+}
+.grid-brek-item{
+    margin-left: 100px;
 }
