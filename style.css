@@ -185,13 +185,17 @@ span{
 }
 .footer-nav{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     color: #fff;
 }
-.footer-nav li{
-    list-style: none;
+.child-1{
+    display: flex;
+    gap: 20px;
+}
+.child-2{
+    display: flex;
+    gap: 20px;
 }
 .icon-btn{
     height: 50px;
@@ -210,12 +214,15 @@ span{
 }
 .footer-list{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
     font-size: 14px;
     color: #fff;
+}
+.list-child{
+    display: flex;
+    gap: 20px;
 }
 .footer-list li{
     list-style: none;
@@ -225,6 +232,7 @@ span{
     justify-content: center;
     color: azure;
     padding: 10px;
+    margin-top: 15px;
 }
 
 /* responsive for mobile device */
@@ -258,14 +266,25 @@ span{
     .logo-container{
         grid-template-columns: repeat(3, 1fr);
         padding: 0px;
+        margin: 0px;
+
+    }
+    .single-logo{
+        padding: 0px;
     }
     .grid-brek-item{
         margin-left: 0px;
     }
-    .footer-logo{
-        flex-wrap: wrap;
+
+    .footer-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .footer-list{
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+  
 }
